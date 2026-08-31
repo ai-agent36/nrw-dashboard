@@ -1,0 +1,6 @@
+data/candidates.json
+data/wdr_sections.json
+data/selected_sources_enriched.json
+.DS_Store
+__pycache__/
+*.pyc

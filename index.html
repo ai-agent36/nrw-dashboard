@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="de" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NRW Lagebild – ein täglich kuratiertes Dashboard für Politik, Regionen und Themen in Nordrhein-Westfalen.">
+  <meta name="theme-color" content="#0b0b0b">
+  <title>NRW Lagebild</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Newsreader:opsz,wght@6..72,500;6..72,600&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css?v=20260901-2">
+</head>
+<body>
+  <a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#top" aria-label="NRW Lagebild – Startseite">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span>NRW<br>Lagebild</span>
+      </a>
+      <div class="edition" aria-live="polite">
+        <span class="live-dot"></span>
+        <span id="edition-label">Daten werden geladen</span>
+      </div>
+      <nav class="main-nav" aria-label="Bereiche">
+        <a href="#heute">Heute</a>
+        <a href="#dauerbrenner">Dauerbrenner</a>
+        <a href="#regionen">Regionen</a>
+        <a href="#newsletter">18 Millionen</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-button" id="search-toggle" type="button" aria-expanded="false" aria-controls="search-panel" aria-label="Suche öffnen">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"></circle><path d="m16 16 4 4"></path></svg>
+        </button>
+        <button class="icon-button" id="theme-toggle" type="button" aria-label="Farbschema wechseln">
+          <svg class="theme-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"></path></svg>
+        </button>
+      </div>
+    </div>
+    <div class="search-panel" id="search-panel" hidden>
+      <div class="search-inner">
+        <label for="global-search">Dashboard durchsuchen</label>
+        <input id="global-search" type="search" autocomplete="off" placeholder="Thema, Ort oder Quelle …">
+        <kbd>ESC</kbd>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="status-bar" id="top" aria-label="Status">
+      <div class="status-inner">
+        <div><span class="status-label">Stand</span><strong id="generated-at">–</strong></div>
+        <div><span class="status-label">Quellen</span><strong id="source-count">–</strong></div>
+        <div><span class="status-label">Nächster Refresh</span><strong>08:00 Uhr</strong></div>
+        <p id="editorial-note">Einordnung statt Endlos-Feed.</p>
+      </div>
+    </section>
+
+    <section class="lead-layout section-shell" id="heute" aria-labelledby="today-heading">
+      <div class="section-heading heading-row">
+        <div>
+          <span class="eyebrow">Lage am Morgen</span>
+          <h1 id="today-heading">Was heute in NRW zählt</h1>
+        </div>
+        <span class="edition-number" id="edition-number">Ausgabe –</span>
+      </div>
+
+      <article class="lead-story" id="lead-story" aria-live="polite">
+        <div class="skeleton skeleton-image"></div>
+        <div class="lead-copy"><div class="skeleton skeleton-line"></div><div class="skeleton skeleton-title"></div></div>
+      </article>
+
+      <aside class="signal-board" aria-labelledby="signal-heading">
+        <div class="panel-heading">
+          <span class="eyebrow">Radar</span>
+          <h2 id="signal-heading">Signale</h2>
+        </div>
+        <div id="signals-list" class="signals-list"></div>
+      </aside>
+    </section>
+
+    <section class="ticker" aria-label="Themenübersicht">
+      <div class="ticker-track" id="ticker-track"></div>
+    </section>
+
+    <section class="section-shell" id="dauerbrenner" aria-labelledby="focus-heading">
+      <div class="section-heading split-heading">
+        <div>
+          <span class="eyebrow">Über den Tag hinaus</span>
+          <h2 id="focus-heading">Dauerbrenner</h2>
+        </div>
+        <p>Themen bleiben sichtbar, solange sich politisch oder praktisch etwas bewegt.</p>
+      </div>
+      <div class="focus-grid" id="focus-grid"></div>
+    </section>
+
+    <section class="news-section section-shell" id="regionen" aria-labelledby="stream-heading">
+      <div class="section-heading stream-heading">
+        <div>
+          <span class="eyebrow">Land · Stadt · Nische</span>
+          <h2 id="stream-heading">Der NRW-Überblick</h2>
+        </div>
+        <div class="view-controls" role="group" aria-label="Ansicht wechseln">
+          <button class="view-button active" type="button" data-view="grid" aria-pressed="true" title="Rasteransicht">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect></svg>
+          </button>
+          <button class="view-button" type="button" data-view="list" aria-pressed="false" title="Listenansicht">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13"></path><circle cx="3" cy="6" r="1"></circle><circle cx="3" cy="12" r="1"></circle><circle cx="3" cy="18" r="1"></circle></svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="filter-rail" id="filter-rail" role="toolbar" aria-label="Nachrichten filtern">
+        <button class="filter-chip active" type="button" data-filter="all" aria-pressed="true">Alles</button>
+        <button class="filter-chip" type="button" data-filter="land">Landespolitik</button>
+        <button class="filter-chip" type="button" data-filter="local">Regionen</button>
+        <button class="filter-chip" type="button" data-filter="niche">Nischenradar</button>
+        <button class="filter-chip" type="button" data-filter="federal">Bundesblick</button>
+      </div>
+
+      <div class="news-grid" id="news-grid" aria-live="polite"></div>
+      <div class="empty-state" id="empty-state" hidden>
+        <span>Keine Treffer</span>
+        <p>Der Filter ist offenbar gründlicher als ein Untersuchungsausschuss.</p>
+      </div>
+    </section>
+
+    <section class="newsletter-section" id="newsletter" aria-labelledby="newsletter-heading">
+      <div class="section-shell newsletter-inner">
+        <div class="newsletter-mark" aria-hidden="true">18M</div>
+        <div class="newsletter-copy">
+          <span class="eyebrow">WDR-Newsletter</span>
+          <h2 id="newsletter-heading">Politik für 18 Millionen</h2>
+          <p id="newsletter-summary">Der aktuelle Newsletter wird geladen.</p>
+          <ul id="newsletter-highlights"></ul>
+          <a class="text-link" id="newsletter-link" href="#" target="_blank" rel="noopener noreferrer">Original lesen <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="newsletter-meta">
+          <span>Letzte Ausgabe</span>
+          <strong id="newsletter-date">–</strong>
+          <small>Freitags · WDR Landespolitik</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-shell method-section" id="methode" aria-labelledby="method-heading">
+      <div>
+        <span class="eyebrow">Transparenz</span>
+        <h2 id="method-heading">Wie dieses Lagebild auswählt</h2>
+      </div>
+      <div class="method-grid">
+        <article><span>01</span><h3>Relevanz</h3><p>Konkrete Folgen für Menschen, Kommunen oder politische Entscheidungen in NRW.</p></article>
+        <article><span>02</span><h3>Dynamik</h3><p>Neue Wendungen, Beschlüsse, Konflikte oder messbare Veränderungen statt bloßer Wiederholung.</p></article>
+        <article><span>03</span><h3>Breite</h3><p>Landespolitik, Regionen und unterschätzte Themen – nicht nur Düsseldorf und die lauteste Schlagzeile.</p></article>
+        <article><span>04</span><h3>Quellen</h3><p>Direkte Links, klare Kennzeichnung von Meinung und bevorzugt bestätigte oder primäre Informationen.</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner section-shell">
+      <div><strong>NRW Lagebild</strong><p>Ein täglich kuratierter Überblick. Automatisch gebaut, redaktionell nachvollziehbar.</p></div>
+      <div class="footer-links"><a href="#methode">Methode</a><a href="https://github.com/ai-agent36/nrw-dashboard" target="_blank" rel="noopener noreferrer">Quellcode</a></div>
+      <small>Keine Verbindung zur Landesregierung oder zum WDR. Alle Rechte an Bildern und Artikeln liegen bei den jeweiligen Quellen.</small>
+    </div>
+  </footer>
+
+  <template id="image-fallback-template"><div class="image-fallback"><span>NRW</span></div></template>
+  <script src="assets/app.js?v=20260901-1" defer></script>
+</body>
+</html>

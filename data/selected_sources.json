@@ -1,0 +1,19 @@
+[
+  {"id":"coal-exit-2030","kind":"land","region":"Rheinisches Revier","url":"https://www1.wdr.de/politik/politik-in-nrw/braunkohleausstieg-merz-neubaur-100.html"},
+  {"id":"school-ten-year-plan","kind":"land","region":"NRW","url":"https://www1.wdr.de/politik/politik-in-nrw/schuljahresbeginn-nrw-lehrergewerkschaft-gew-bessere-ogs-100.html"},
+  {"id":"school-streets","kind":"land","region":"NRW","url":"https://www1.wdr.de/politik/politik-in-nrw/schulstrassen-nrw-elterntaxis-modellprojekte-100.html"},
+  {"id":"summer-drought","kind":"land","region":"NRW","url":"https://www1.wdr.de/nrw/wetter/aktuell/sommer-2026-bilanz-nrw-100.html"},
+  {"id":"autumn-drought","kind":"niche","region":"NRW","url":"https://www1.wdr.de/nrw/wetter/nrw-wetter-herbst-trocken-duerre-100.html"},
+  {"id":"nrw-survey-80","kind":"land","region":"NRW","url":"https://www1.wdr.de/nrw/nrw-80-jahre-umfrage-infratest-dimap-100.html"},
+  {"id":"hydrogen-rheine","kind":"niche","region":"Münsterland","url":"https://www1.wdr.de/nrw/verkehr/wasserstoff-tankstelle-rheine-lkw-100.html"},
+  {"id":"cologne-museums","kind":"local","region":"Köln/Bonn","url":"https://www1.wdr.de/kultur/zukunft-koelner-museen-100.html"},
+  {"id":"renk-rheine","kind":"local","region":"Münsterland","url":"https://www1.wdr.de/wirtschaft/unternehmen/rheine-renk-ausbau-ruestung-100.html"},
+  {"id":"volunteer-firefighter-court","kind":"niche","region":"Aachen/Eifel","url":"https://www1.wdr.de/nrw/aachen-eifel/kreis-dueren/dueren-feuerwehrmann-klage-gemeinde-100.html"},
+  {"id":"coal-protest-documentation","kind":"local","region":"Aachen/Eifel","url":"https://www1.wdr.de/nrw/aachen-eifel/kreis-heinsberg/beverath-heinsberg-diskussion-wiederstand-braunkohle-100.html"},
+  {"id":"stalag-326","kind":"local","region":"Ostwestfalen-Lippe","url":"https://www1.wdr.de/nrw/ostwestfalen-lippe/kreis-guetersloh/senne-weltkrieg-stalag-kriegsgefangene-lager-erinnerung-100.html"},
+  {"id":"burbach-water-tanks","kind":"niche","region":"Südwestfalen","url":"https://www1.wdr.de/nrw/sauerland-siegerland/kreis-siegen-wittgenstein/waldbrand-loeschwasserbehaelter-feuerwehr-burbach-100.html"},
+  {"id":"afd-saxony-anhalt","kind":"federal","region":"NRW/Bund","url":"https://www1.wdr.de/politik/afd-wahl-sachsen-anhalt-stimmung-nrw-100.html"},
+  {"id":"newsletter-wuest","kind":"land","region":"NRW","url":"https://www1.wdr.de/politik/politik-in-nrw/18-millionen/editorial-wuest-kommt-mit-schwerem-rucksack-aus-sommerpause-100.html"},
+  {"id":"wuppertal-industry","kind":"local","region":"Bergisches Land","url":"https://www.wz.de/nrw/wuppertal/industrie-wuppertal-verliert-innerhalb-eines-jahres-1400-arbeitsplaetze_aid-153872475"},
+  {"id":"low-water-residues","kind":"land","region":"Rhein/Ruhr","url":"https://www.waz.de/wirtschaft/article413020563/folge-des-niedrigwassers-erhoehte-rueckstaende-von-arzneimitteln-in-ruhr-und-rhein.html"}
+]

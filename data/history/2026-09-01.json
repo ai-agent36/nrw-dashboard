@@ -1,0 +1,284 @@
+{
+  "meta": {
+    "title": "NRW Lagebild",
+    "generatedAt": "2026-09-01T00:01:14+02:00",
+    "edition": "01/09/2026",
+    "sourceCount": 15,
+    "editorialNote": "15 verifizierte Direktquellen · Einordnung statt Endlos-Feed"
+  },
+  "lead": {
+    "id": "coal-exit-2030",
+    "kicker": "Bund trifft NRW",
+    "title": "Neubaur hält am Kohleausstieg 2030 fest",
+    "summary": "Bundeskanzler Friedrich Merz hatte den vorgezogenen Braunkohleausstieg im Sommerinterview infrage gestellt. NRW-Wirtschaftsministerin Mona Neubaur verteidigt den vereinbarten Termin deutlich.",
+    "whyItMatters": "Das ist keine abstrakte Berliner Debatte: Strukturhilfen, Kraftwerksplanung und Investitionen im Rheinischen Revier hängen an verlässlichen Zeitplänen.",
+    "category": "Energiepolitik",
+    "region": "Rheinisches Revier",
+    "publishedAt": "2026-08-31T18:11:34+02:00",
+    "image": "https://www1.wdr.de/politik/politik-in-nrw/hendrik-wuest-friedrich-merz-102~_v-HintergrundL.jpg",
+    "imageAlt": "Friedrich Merz und Hendrik Wüst bei einem politischen Termin",
+    "source": {"name": "WDR"},
+    "sourceUrl": "https://www1.wdr.de/politik/politik-in-nrw/braunkohleausstieg-merz-neubaur-100.html"
+  },
+  "signals": [
+    {
+      "title": "Trockenheit & Niedrigwasser",
+      "level": "high",
+      "intensity": 94,
+      "detail": "Der Extremsommer wirkt bei Flüssen, Trinkwasser, Landwirtschaft und Waldbrandgefahr nach."
+    },
+    {
+      "title": "Schulstart",
+      "level": "high",
+      "intensity": 86,
+      "detail": "Lehrkräftemangel, Ganztag und sichere Schulwege treffen zeitgleich auf den neuen Jahrgang."
+    },
+    {
+      "title": "Industriearbeitsplätze",
+      "level": "watch",
+      "intensity": 69,
+      "detail": "Wuppertaler Beschäftigungszahlen und neue Rüstungsjobs in Rheine zeigen einen ungleichen Umbau."
+    }
+  ],
+  "ticker": [
+    {"label": "Kohleausstieg 2030 unter Druck"},
+    {"label": "Schulstart: GEW fordert Zehn-Jahres-Plan"},
+    {"label": "Rhein und Ruhr: mehr Arzneimittelrückstände"},
+    {"label": "Kölner Museen in der Sanierungsfalle"},
+    {"label": "Rheine: Renk baut Rüstungsstandort aus"},
+    {"label": "Waldbrandschutz: mobile Wassertanks"}
+  ],
+  "focusTopics": [
+    {
+      "id": "drought-low-water",
+      "title": "Extremsommer, Dürre und niedrige Flusspegel",
+      "status": "hohe Dynamik",
+      "daysActive": 32,
+      "summary": "Hitze, Trockenheit und Waldbrände prägen die Sommerbilanz. In Rhein und Ruhr werden infolge des Niedrigwassers zugleich höhere Arzneimittelrückstände gemessen.",
+      "latestUpdate": "31. Aug.",
+      "sourceCount": 3,
+      "image": "https://www1.wdr.de/duesseldorf-rhein-trocken-rissiger-boden-100~_v-HintergrundL.jpg"
+    },
+    {
+      "id": "school-start",
+      "title": "Schule und Ganztag",
+      "status": "akut",
+      "daysActive": 7,
+      "summary": "Zum Schulstart verdichten sich Konflikte um Personal, OGS-Qualität und sichere Wege vor den Schultoren.",
+      "latestUpdate": "31. Aug.",
+      "sourceCount": 3,
+      "image": "https://www1.wdr.de/nrw/ostwestfalen-lippe/elterntaxis-autoverbot-bielefeld-schulen106~_v-HintergrundL.jpg"
+    },
+    {
+      "id": "coal-exit",
+      "title": "Kohleausstieg 2030",
+      "status": "Konflikt",
+      "daysActive": 1,
+      "summary": "Merz stellt den Termin infrage, Neubaur verteidigt ihn. Das Rheinische Revier braucht Planungssicherheit.",
+      "latestUpdate": "31. Aug.",
+      "sourceCount": 2,
+      "image": "https://www1.wdr.de/politik/politik-in-nrw/luetzerath-130~_v-HintergrundL.jpg"
+    },
+    {
+      "id": "industrial-transition",
+      "title": "NRWs ungleicher Industrieumbau",
+      "status": "beobachten",
+      "daysActive": 4,
+      "summary": "Während Wuppertal binnen eines Jahres 1.400 Industriearbeitsplätze verliert, wächst in Rheine der Rüstungsstandort Renk.",
+      "latestUpdate": "31. Aug.",
+      "sourceCount": 2,
+      "image": "https://www1.wdr.de/nrw/muensterland/kreis-steinfurt/rheine-renk-ausbau-ruestung-102~_v-HintergrundL.jpg"
+    }
+  ],
+  "stories": [
+    {
+      "id": "school-ten-year-plan",
+      "kind": "land",
+      "title": "GEW fordert einen Zehn-Jahres-Plan für NRWs Schulen",
+      "summary": "Die Lehrergewerkschaft verlangt zum Schulbeginn eine Schulpolitik über einzelne Regierungsperioden hinaus. Im Zentrum stehen Personal, verlässlicher Ganztag und bessere Bedingungen in den OGS.",
+      "whyItMatters": "Kurzfristige Programme lösen den strukturellen Personalmangel nicht; ein überparteilicher Plan könnte Ziele und Finanzierung verstetigen.",
+      "category": "Bildung",
+      "region": "NRW",
+      "publishedAt": "2026-08-31T16:40:00+02:00",
+      "image": "https://www1.wdr.de/radio/cosmo/programm/sendungen/radio-forum/deutschland/ganztagsgrundschule110~_v-premiumRebrushKlein4x3.jpg",
+      "imageAlt": "Kinder in einer Ganztagsgrundschule",
+      "source": {"name": "WDR"},
+      "sourceUrl": "https://www1.wdr.de/politik/politik-in-nrw/schuljahresbeginn-nrw-lehrergewerkschaft-gew-bessere-ogs-100.html"
+    },
+    {
+      "id": "low-water-residues",
+      "kind": "land",
+      "title": "Niedrigwasser konzentriert Arzneimittelrückstände",
+      "summary": "Nach dem Rekordsommer melden Behörden erhöhte Rückstände eines Blutdrucksenkers in Ruhr und Rhein. Trinkwasserversorger ordnen die Messwerte ein.",
+      "whyItMatters": "Niedrige Pegel sind nicht nur ein Schifffahrtsproblem: Weniger Wasser kann Schadstoffe stärker konzentrieren und die Aufbereitung fordern.",
+      "category": "Wasser & Gesundheit",
+      "region": "Rhein/Ruhr",
+      "publishedAt": "2026-08-31T17:39:07+02:00",
+      "image": "https://img.sparknews.funkemedien.de/413020767/413020767_1788188582_v16_9_1600.jpeg",
+      "imageAlt": "Niedriger Wasserstand an einem Fluss",
+      "source": {"name": "WAZ"},
+      "sourceUrl": "https://www.waz.de/wirtschaft/article413020563/folge-des-niedrigwassers-erhoehte-rueckstaende-von-arzneimitteln-in-ruhr-und-rhein.html"
+    },
+    {
+      "id": "cologne-museums",
+      "kind": "local",
+      "title": "Kölns Museen stecken in einer Sanierungsfalle",
+      "summary": "Mehrere Kölner Museen sind wegen Sanierungen geschlossen; der Kulturbetrieb bleibt ungewöhnlich ruhig. Fachleute kritisieren, dass die Stadt ihr Potenzial nicht ausschöpfe.",
+      "whyItMatters": "Die Dauerbaustellen treffen kulturelle Teilhabe, Tourismus und das internationale Profil der größten NRW-Stadt zugleich.",
+      "category": "Kulturpolitik",
+      "region": "Köln/Bonn",
+      "publishedAt": "2026-08-31T17:49:15+02:00",
+      "image": "https://www1.wdr.de/radio/wdr3/programm/sendungen/roemisch-germanisches-museum-koeln-baustelle-100~_v-HintergrundL.jpg",
+      "imageAlt": "Baustelle am Römisch-Germanischen Museum in Köln",
+      "source": {"name": "WDR"},
+      "sourceUrl": "https://www1.wdr.de/kultur/zukunft-koelner-museen-100.html"
+    },
+    {
+      "id": "renk-rheine",
+      "kind": "local",
+      "title": "Renk baut den Rüstungsstandort Rheine aus",
+      "summary": "Der Hersteller erweitert in Rheine die Produktion von Panzergetrieben. Der Ausbau soll Arbeitsplätze sichern und zusätzliche Kapazitäten für NATO-Aufträge schaffen.",
+      "whyItMatters": "Die sicherheitspolitische Zeitenwende wird im Münsterland konkret – als Industriepolitik, Arbeitgeber und kommunale Standortfrage.",
+      "category": "Wirtschaft & Rüstung",
+      "region": "Münsterland",
+      "publishedAt": "2026-08-31T18:09:39+02:00",
+      "image": "https://www1.wdr.de/nrw/muensterland/kreis-steinfurt/rheine-renk-ausbau-ruestung-102~_v-HintergrundL.jpg",
+      "imageAlt": "Produktionsstandort des Rüstungszulieferers Renk in Rheine",
+      "source": {"name": "WDR"},
+      "sourceUrl": "https://www1.wdr.de/wirtschaft/unternehmen/rheine-renk-ausbau-ruestung-100.html"
+    },
+    {
+      "id": "school-streets",
+      "kind": "land",
+      "title": "NRW testet neue Mittel gegen Elterntaxis",
+      "summary": "Autos direkt vor Schultoren gefährden Kinder und blockieren Wege. Modellprojekte erproben Schulstraßen und zeitweise Zufahrtsbeschränkungen.",
+      "whyItMatters": "Das Thema verbindet Verkehrspolitik mit Kindersicherheit – und entscheidet sich am Ende in den Kommunen, Straße für Straße.",
+      "category": "Mobilität",
+      "region": "NRW",
+      "publishedAt": "2026-08-31T11:05:38+02:00",
+      "image": "https://www1.wdr.de/nrw/ostwestfalen-lippe/elterntaxis-autoverbot-bielefeld-schulen106~_v-HintergrundL.jpg",
+      "imageAlt": "Autos und Kinder vor einer Schule",
+      "source": {"name": "WDR"},
+      "sourceUrl": "https://www1.wdr.de/politik/politik-in-nrw/schulstrassen-nrw-elterntaxis-modellprojekte-100.html"
+    },
+    {
+      "id": "volunteer-firefighter-court",
+      "kind": "niche",
+      "title": "Ehrenamtlicher Feuerwehrmann verliert Streit um Verdienstausfall",
+      "summary": "Ein Feuerwehrmann aus Vettweiß verlangte von der Gemeinde Ersatz für Verdienstausfall. Das Verwaltungsgericht wies seine Klage ab.",
+      "whyItMatters": "Ein unscheinbarer Rechtsstreit berührt die praktische Absicherung des Ehrenamts, auf das besonders ländliche Kommunen angewiesen sind.",
+      "category": "Ehrenamt & Recht",
+      "region": "Aachen/Eifel",
+      "publishedAt": "2026-08-31T19:53:17+02:00",
+      "image": "https://www1.wdr.de/nrw/aachen-eifel/kreis-dueren/dueren-feuerwehrmann-klage-gemeinde-102~_v-HintergrundL.jpg",
+      "imageAlt": "Ein Fahrzeug der Freiwilligen Feuerwehr",
+      "source": {"name": "WDR"},
+      "sourceUrl": "https://www1.wdr.de/nrw/aachen-eifel/kreis-dueren/dueren-feuerwehrmann-klage-gemeinde-100.html"
+    },
+    {
+      "id": "summer-drought",
+      "kind": "land",
+      "title": "NRW zieht Bilanz eines extremen Sommers",
+      "summary": "Die vorläufige WDR-Wetterbilanz nennt außergewöhnliche Hitze, Trockenheit und Waldbrände. Wettermodelle sehen auch für den Herbst ein anhaltendes Dürrerisiko.",
+      "whyItMatters": "Die Folgen reichen von Ernten und Trinkwasser bis zu Stadtgrün, Wald und Feuerwehren – und bleiben länger relevant als der einzelne Hitzetag.",
+      "category": "Klima",
+      "region": "NRW",
+      "publishedAt": "2026-08-31T05:00:00+02:00",
+      "image": "https://www1.wdr.de/duesseldorf-rhein-trocken-rissiger-boden-100~_v-HintergrundL.jpg",
+      "imageAlt": "Ausgetrockneter, rissiger Boden am Rhein",
+      "source": {"name": "WDR"},
+      "sourceUrl": "https://www1.wdr.de/nrw/wetter/aktuell/sommer-2026-bilanz-nrw-100.html"
+    },
+    {
+      "id": "stalag-326",
+      "kind": "local",
+      "title": "Stalag 326: Zehntausende Opfer, wenig Erinnerung",
+      "summary": "Studierende haben untersucht, wie an das frühere Kriegsgefangenenlager bei Bielefeld erinnert wurde. Dort starben bis 1945 Zehntausende Gefangene.",
+      "whyItMatters": "Die Debatte zeigt, wie kommunale Erinnerungskultur historische Verantwortung sichtbar macht – oder jahrzehntelang an den Rand drängt.",
+      "category": "Erinnerungskultur",
+      "region": "Ostwestfalen-Lippe",
+      "publishedAt": "2026-08-31T05:10:00+02:00",
+      "image": "https://www1.wdr.de/nachrichten/stalag-senne-100~_v-gross4x3.jpg",
+      "imageAlt": "Historisches Gelände des Kriegsgefangenenlagers Stalag 326",
+      "source": {"name": "WDR"},
+      "sourceUrl": "https://www1.wdr.de/nrw/ostwestfalen-lippe/kreis-guetersloh/senne-weltkrieg-stalag-kriegsgefangene-lager-erinnerung-100.html"
+    },
+    {
+      "id": "burbach-water-tanks",
+      "kind": "niche",
+      "title": "Mobile Wassertanks verkürzen den Weg zum Waldbrand",
+      "summary": "Ein System aus Burbach bringt 10.000 Liter Löschwasser in kurzer Zeit näher an schwer zugängliche Brandstellen. Das kann kilometerlange Schlauchwege ersetzen.",
+      "whyItMatters": "Mit wachsender Waldbrandgefahr wird kommunale Katastrophenvorsorge zum Innovationsthema – gerade im ländlichen Südwestfalen.",
+      "category": "Klimaanpassung",
+      "region": "Südwestfalen",
+      "publishedAt": "2026-08-31T05:26:01+02:00",
+      "image": "https://www1.wdr.de/nrw/sauerland-siegerland/kreis-siegen-wittgenstein/waldbrand-loeschwasserbehaelter-feuerwehr-burbach-102~_v-HintergrundL.jpg",
+      "imageAlt": "Mobiler Löschwasserbehälter der Feuerwehr",
+      "source": {"name": "WDR"},
+      "sourceUrl": "https://www1.wdr.de/nrw/sauerland-siegerland/kreis-siegen-wittgenstein/waldbrand-loeschwasserbehaelter-feuerwehr-burbach-100.html"
+    },
+    {
+      "id": "wuppertal-industry",
+      "kind": "local",
+      "title": "Wuppertal verliert 1.400 Industriearbeitsplätze",
+      "summary": "Der IHK-Zahlenspiegel weist für Wuppertal binnen eines Jahres einen deutlichen Rückgang industrieller Beschäftigung aus. Zugleich ist auch der Kaufkraftindex erneut gesunken.",
+      "whyItMatters": "Der Befund verdichtet die Debatte über Deindustrialisierung, kommunale Einnahmen und die wirtschaftliche Zukunft des Bergischen Landes.",
+      "category": "Wirtschaft",
+      "region": "Bergisches Land",
+      "publishedAt": "2026-08-28T09:20:00+02:00",
+      "image": "https://www.wz.de/imgs/39/2/7/9/0/3/9/4/6/7/tok_190b3395640d82954932e880c387ddb7/w1200_h630_x1249_y681_DPA_bfunk_dpa_5FA6AE0035D5C069-18512a06ef186d73.jpg",
+      "imageAlt": "Industrieanlage im Bergischen Land",
+      "source": {"name": "Westdeutsche Zeitung"},
+      "sourceUrl": "https://www.wz.de/nrw/wuppertal/industrie-wuppertal-verliert-innerhalb-eines-jahres-1400-arbeitsplaetze_aid-153872475"
+    },
+    {
+      "id": "hydrogen-rheine",
+      "kind": "niche",
+      "title": "Rheine eröffnet Wasserstoff-Tankstelle für Lkw",
+      "summary": "Die elfte Wasserstoff-Tankstelle in Rheine richtet sich an Speditionen und Unternehmen mit schweren Nutzfahrzeugen.",
+      "whyItMatters": "Ob Wasserstoff im Straßengüterverkehr trägt, zeigt sich nicht in Strategiepapieren, sondern an Auslastung, Preis und Flottenentscheidungen vor Ort.",
+      "category": "Verkehrswende",
+      "region": "Münsterland",
+      "publishedAt": "2026-08-27T09:02:00+02:00",
+      "image": "https://www1.wdr.de/nrw/verkehr/wasserstoff-tankstelle-rheine-lkw-110~_v-HintergrundL.jpg",
+      "imageAlt": "Wasserstoff-Tankstelle für Lastwagen in Rheine",
+      "source": {"name": "WDR"},
+      "sourceUrl": "https://www1.wdr.de/nrw/verkehr/wasserstoff-tankstelle-rheine-lkw-100.html"
+    },
+    {
+      "id": "coal-protest-documentation",
+      "kind": "local",
+      "title": "Ein Dokumentationszentrum soll den Kohleprotest bewahren",
+      "summary": "Nach Jahrzehnten des Widerstands gegen die Tagebaue wird in Beverath über ein Dokumentationszentrum diskutiert. Es soll Erfahrungen aus den betroffenen Orten sichern.",
+      "whyItMatters": "Strukturwandel ist auch Erinnerungspolitik: Das Zentrum könnte Konflikte, Umsiedlungen und zivilgesellschaftliches Engagement dauerhaft dokumentieren.",
+      "category": "Strukturwandel",
+      "region": "Aachen/Eifel",
+      "publishedAt": "2026-08-31T14:07:17+02:00",
+      "image": "https://www1.wdr.de/politik/politik-in-nrw/luetzerath-130~_v-HintergrundL.jpg",
+      "imageAlt": "Protest am Braunkohletagebau",
+      "source": {"name": "WDR"},
+      "sourceUrl": "https://www1.wdr.de/nrw/aachen-eifel/kreis-heinsberg/beverath-heinsberg-diskussion-wiederstand-braunkohle-100.html"
+    },
+    {
+      "id": "afd-saxony-anhalt",
+      "kind": "federal",
+      "title": "NRW blickt nervös auf die Wahl in Sachsen-Anhalt",
+      "summary": "Eine Woche vor der Landtagswahl führt die AfD in Umfragen. Der WDR fragt Menschen in NRW, mit welchen Erwartungen und Sorgen sie auf das Ergebnis schauen.",
+      "whyItMatters": "Ein sehr starkes AfD-Ergebnis könnte Debatten über Koalitionen, den Kurs der Bundesparteien und politische Mobilisierung auch in NRW verändern.",
+      "category": "Bundesblick",
+      "region": "NRW/Bund",
+      "publishedAt": "2026-08-30T20:53:06+02:00",
+      "image": "https://www1.wdr.de/eine-woche-vor-sachsen-anhalt-wahl-schuh-100~_v-HintergrundL.jpg",
+      "imageAlt": "Straßenszene vor der Wahl in Sachsen-Anhalt",
+      "source": {"name": "WDR"},
+      "sourceUrl": "https://www1.wdr.de/politik/afd-wahl-sachsen-anhalt-stimmung-nrw-100.html"
+    }
+  ],
+  "newsletter": {
+    "title": "Wüst kommt mit schwerem Rucksack aus der Sommerpause",
+    "publishedAt": "2026-08-28T14:29:23+02:00",
+    "summary": "Der aktuelle „18 Millionen“-Newsletter sortiert Wüsts Rückkehr aus der Sommerpause, Schulstart, Ganztagsanspruch, Nationalpark-Pläne und die Folgen des Rhein-Niedrigwassers.",
+    "highlights": ["Wüsts politische Last", "Schulstart", "Zweiter Nationalpark", "Rhein-Niedrigwasser"],
+    "sourceUrl": "https://nl-landespolitik.wdr.de/mailing/117/9393544/25419516/6290/b4c3b2f33f/index.html"
+  }
+}
