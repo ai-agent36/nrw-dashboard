@@ -1,10 +1,10 @@
 {
   "meta": {
     "title": "NRW Lagebild",
-    "generatedAt": "2026-09-01T00:01:14+02:00",
+    "generatedAt": "2026-09-01T00:38:40+02:00",
     "edition": "01/09/2026",
-    "sourceCount": 15,
-    "editorialNote": "15 verifizierte Direktquellen · Einordnung statt Endlos-Feed"
+    "sourceCount": 19,
+    "editorialNote": "19 verifizierte Direktquellen · Einordnung statt Endlos-Feed"
   },
   "lead": {
     "id": "coal-exit-2030",
@@ -15,9 +15,9 @@
     "category": "Energiepolitik",
     "region": "Rheinisches Revier",
     "publishedAt": "2026-08-31T18:11:34+02:00",
-    "image": "https://www1.wdr.de/politik/politik-in-nrw/hendrik-wuest-friedrich-merz-102~_v-HintergrundL.jpg",
-    "imageAlt": "Friedrich Merz und Hendrik Wüst bei einem politischen Termin",
-    "source": {"name": "WDR"},
+    "source": {
+      "name": "WDR"
+    },
     "sourceUrl": "https://www1.wdr.de/politik/politik-in-nrw/braunkohleausstieg-merz-neubaur-100.html"
   },
   "signals": [
@@ -30,23 +30,35 @@
     {
       "title": "Schulstart",
       "level": "high",
-      "intensity": 86,
-      "detail": "Lehrkräftemangel, Ganztag und sichere Schulwege treffen zeitgleich auf den neuen Jahrgang."
+      "intensity": 89,
+      "detail": "Lehrkräftemangel, Ganztag, Schulwege und ein neuer Besoldungsstreit treffen zum Schulstart zusammen."
     },
     {
-      "title": "Industriearbeitsplätze",
+      "title": "Industrie & Fachkräfte",
       "level": "watch",
-      "intensity": 69,
-      "detail": "Wuppertaler Beschäftigungszahlen und neue Rüstungsjobs in Rheine zeigen einen ungleichen Umbau."
+      "intensity": 72,
+      "detail": "Jobverluste, Rüstungswachstum und günstiges Azubi-Wohnen zeigen den ungleichen Umbau der Regionen."
     }
   ],
   "ticker": [
-    {"label": "Kohleausstieg 2030 unter Druck"},
-    {"label": "Schulstart: GEW fordert Zehn-Jahres-Plan"},
-    {"label": "Rhein und Ruhr: mehr Arzneimittelrückstände"},
-    {"label": "Kölner Museen in der Sanierungsfalle"},
-    {"label": "Rheine: Renk baut Rüstungsstandort aus"},
-    {"label": "Waldbrandschutz: mobile Wassertanks"}
+    {
+      "label": "Kohleausstieg 2030 unter Druck"
+    },
+    {
+      "label": "Schulstart: GEW fordert Zehn-Jahres-Plan"
+    },
+    {
+      "label": "A13: Verbände unterstützen Musterverfahren"
+    },
+    {
+      "label": "Regionalplan Ruhr bleibt vor Gericht"
+    },
+    {
+      "label": "Rhein und Ruhr: mehr Arzneimittelrückstände"
+    },
+    {
+      "label": "Dortmund baut günstigen Azubi-Campus"
+    }
   ],
   "focusTopics": [
     {
@@ -64,9 +76,9 @@
       "title": "Schule und Ganztag",
       "status": "akut",
       "daysActive": 7,
-      "summary": "Zum Schulstart verdichten sich Konflikte um Personal, OGS-Qualität und sichere Wege vor den Schultoren.",
+      "summary": "Zum Schulstart verdichten sich Konflikte um Personal, OGS-Qualität, sichere Wege und die Besoldungsstruktur nach der A13-Reform.",
       "latestUpdate": "31. Aug.",
-      "sourceCount": 3,
+      "sourceCount": 4,
       "image": "https://www1.wdr.de/nrw/ostwestfalen-lippe/elterntaxis-autoverbot-bielefeld-schulen106~_v-HintergrundL.jpg"
     },
     {
@@ -81,13 +93,23 @@
     },
     {
       "id": "industrial-transition",
-      "title": "NRWs ungleicher Industrieumbau",
+      "title": "NRWs ungleicher Wirtschafts- und Fachkräfteumbau",
       "status": "beobachten",
       "daysActive": 4,
-      "summary": "Während Wuppertal binnen eines Jahres 1.400 Industriearbeitsplätze verliert, wächst in Rheine der Rüstungsstandort Renk.",
+      "summary": "Wuppertal verliert Industriearbeitsplätze, Renk wächst in Rheine und Dortmund setzt mit günstigem Azubi-Wohnen auf Fachkräftesicherung.",
       "latestUpdate": "31. Aug.",
-      "sourceCount": 2,
+      "sourceCount": 3,
       "image": "https://www1.wdr.de/nrw/muensterland/kreis-steinfurt/rheine-renk-ausbau-ruestung-102~_v-HintergrundL.jpg"
+    },
+    {
+      "id": "regionalplan-ruhr",
+      "title": "Regionalplan Ruhr nach dem OVG-Urteil",
+      "status": "Rechtsstreit",
+      "daysActive": 14,
+      "summary": "Nach der gerichtlichen Aufhebung zieht der RVR nach Leipzig und stellt parallel einen neuen Plan auf. Bis zur Rechtsklarheit bleiben Flächennutzung und Investitionen unsicher.",
+      "latestUpdate": "21. Aug.",
+      "sourceCount": 4,
+      "image": "https://www1.wdr.de/nrw/ruhrgebiet/regionalverband-ruhr-rvr-essen100~_v-HintergrundL.jpg"
     }
   ],
   "stories": [
@@ -102,8 +124,26 @@
       "publishedAt": "2026-08-31T16:40:00+02:00",
       "image": "https://www1.wdr.de/radio/cosmo/programm/sendungen/radio-forum/deutschland/ganztagsgrundschule110~_v-premiumRebrushKlein4x3.jpg",
       "imageAlt": "Kinder in einer Ganztagsgrundschule",
-      "source": {"name": "WDR"},
+      "source": {
+        "name": "WDR"
+      },
       "sourceUrl": "https://www1.wdr.de/politik/politik-in-nrw/schuljahresbeginn-nrw-lehrergewerkschaft-gew-bessere-ogs-100.html"
+    },
+    {
+      "id": "teacher-pay-promotion",
+      "kind": "land",
+      "title": "Lehrerverbände unterstützen Klagen zur Beförderungsbesoldung",
+      "summary": "Seit 1. August liegen an Grund-, Haupt- und Realschulen Eingangsamt und erstes Beförderungsamt beide in A13. VBE NRW und lehrer nrw haben Betroffene für Musterverfahren gewonnen.",
+      "whyItMatters": "Der Streit betrifft die Laufbahnstruktur: Wenn zusätzliche Verantwortung finanziell nicht sichtbar wird, könnten Funktionsstellen noch schwerer zu besetzen sein.",
+      "category": "Bildung & Besoldung",
+      "region": "NRW",
+      "publishedAt": "2026-08-31T18:55:04+02:00",
+      "image": "https://www.news4teachers.de/wp-content/uploads/Voller-Erfolg-1024x768.png",
+      "imageAlt": "Karikatur zur A13-Besoldung von Lehrkräften",
+      "source": {
+        "name": "News4teachers"
+      },
+      "sourceUrl": "https://www.news4teachers.de/2026/08/a13-erreicht-befoerderung-entwertet-lehrerverbaende-ziehen-wegen-besoldung-vor-gericht/"
     },
     {
       "id": "low-water-residues",
@@ -116,8 +156,26 @@
       "publishedAt": "2026-08-31T17:39:07+02:00",
       "image": "https://img.sparknews.funkemedien.de/413020767/413020767_1788188582_v16_9_1600.jpeg",
       "imageAlt": "Niedriger Wasserstand an einem Fluss",
-      "source": {"name": "WAZ"},
+      "source": {
+        "name": "WAZ"
+      },
       "sourceUrl": "https://www.waz.de/wirtschaft/article413020563/folge-des-niedrigwassers-erhoehte-rueckstaende-von-arzneimitteln-in-ruhr-und-rhein.html"
+    },
+    {
+      "id": "regionalplan-ruhr-court",
+      "kind": "local",
+      "title": "RVR zieht wegen des gekippten Regionalplans nach Leipzig",
+      "summary": "Das Ruhrparlament hat eine Nichtzulassungsbeschwerde beim Bundesverwaltungsgericht beschlossen. Parallel arbeitet der RVR an einem neuen Regionalplan, der nach seiner Planung frühestens 2029 rechtsgültig werden könnte.",
+      "whyItMatters": "Der Plan steuert Flächen für Wohnen, Gewerbe, Natur und Rohstoffabbau in elf Städten und vier Kreisen; die Hängepartie berührt damit viele kommunale Investitionen.",
+      "category": "Regionalplanung",
+      "region": "Ruhrgebiet",
+      "publishedAt": "2026-08-18T21:07:33+02:00",
+      "image": "https://www1.wdr.de/nrw/ruhrgebiet/regionalverband-ruhr-rvr-essen100~_v-HintergrundL.jpg",
+      "imageAlt": "Gebäude des Regionalverbands Ruhr in Essen",
+      "source": {
+        "name": "WDR"
+      },
+      "sourceUrl": "https://www1.wdr.de/nrw/ruhrgebiet/planungsausschuss-zum-regionalplan-ruhr-102.html"
     },
     {
       "id": "cologne-museums",
@@ -130,7 +188,9 @@
       "publishedAt": "2026-08-31T17:49:15+02:00",
       "image": "https://www1.wdr.de/radio/wdr3/programm/sendungen/roemisch-germanisches-museum-koeln-baustelle-100~_v-HintergrundL.jpg",
       "imageAlt": "Baustelle am Römisch-Germanischen Museum in Köln",
-      "source": {"name": "WDR"},
+      "source": {
+        "name": "WDR"
+      },
       "sourceUrl": "https://www1.wdr.de/kultur/zukunft-koelner-museen-100.html"
     },
     {
@@ -144,8 +204,26 @@
       "publishedAt": "2026-08-31T18:09:39+02:00",
       "image": "https://www1.wdr.de/nrw/muensterland/kreis-steinfurt/rheine-renk-ausbau-ruestung-102~_v-HintergrundL.jpg",
       "imageAlt": "Produktionsstandort des Rüstungszulieferers Renk in Rheine",
-      "source": {"name": "WDR"},
+      "source": {
+        "name": "WDR"
+      },
       "sourceUrl": "https://www1.wdr.de/wirtschaft/unternehmen/rheine-renk-ausbau-ruestung-100.html"
+    },
+    {
+      "id": "a59-duesseldorf-closure",
+      "kind": "local",
+      "title": "A59 Richtung Düsseldorf wird monatelang gesperrt",
+      "summary": "Die Sanierung der A59 geht in die zweite Phase. Ab Oktober müssen sich Pendler auf eine monatelange Sperrung in Richtung Düsseldorf und weiträumige Umleitungen einstellen.",
+      "whyItMatters": "Die A59 ist eine wichtige Pendlerachse am Niederrhein; die Langzeitsperrung verlagert Verkehr auf bereits belastete Alternativrouten.",
+      "category": "Verkehr",
+      "region": "Düsseldorf/Niederrhein",
+      "publishedAt": "2026-08-26T15:57:40+02:00",
+      "image": "https://www1.wdr.de/nachrichten/baustellenschild-autobahn-sperrung-102~_v-HintergrundL.jpg",
+      "imageAlt": "Baustellenschild an einer Autobahn",
+      "source": {
+        "name": "WDR"
+      },
+      "sourceUrl": "https://www1.wdr.de/nrw/duesseldorf/autobahn-59-sperrung-duesseldorf-100.html"
     },
     {
       "id": "school-streets",
@@ -158,7 +236,9 @@
       "publishedAt": "2026-08-31T11:05:38+02:00",
       "image": "https://www1.wdr.de/nrw/ostwestfalen-lippe/elterntaxis-autoverbot-bielefeld-schulen106~_v-HintergrundL.jpg",
       "imageAlt": "Autos und Kinder vor einer Schule",
-      "source": {"name": "WDR"},
+      "source": {
+        "name": "WDR"
+      },
       "sourceUrl": "https://www1.wdr.de/politik/politik-in-nrw/schulstrassen-nrw-elterntaxis-modellprojekte-100.html"
     },
     {
@@ -172,21 +252,25 @@
       "publishedAt": "2026-08-31T19:53:17+02:00",
       "image": "https://www1.wdr.de/nrw/aachen-eifel/kreis-dueren/dueren-feuerwehrmann-klage-gemeinde-102~_v-HintergrundL.jpg",
       "imageAlt": "Ein Fahrzeug der Freiwilligen Feuerwehr",
-      "source": {"name": "WDR"},
+      "source": {
+        "name": "WDR"
+      },
       "sourceUrl": "https://www1.wdr.de/nrw/aachen-eifel/kreis-dueren/dueren-feuerwehrmann-klage-gemeinde-100.html"
     },
     {
       "id": "summer-drought",
       "kind": "land",
       "title": "NRW zieht Bilanz eines extremen Sommers",
-      "summary": "Die vorläufige WDR-Wetterbilanz nennt außergewöhnliche Hitze, Trockenheit und Waldbrände. Wettermodelle sehen auch für den Herbst ein anhaltendes Dürrerisiko.",
+      "summary": "Die vorläufige WDR-Wetterbilanz nennt außergewöhnliche Hitze, Trockenheit und Waldbrände. Diese Belastungen prägten weite Teile des Landes.",
       "whyItMatters": "Die Folgen reichen von Ernten und Trinkwasser bis zu Stadtgrün, Wald und Feuerwehren – und bleiben länger relevant als der einzelne Hitzetag.",
       "category": "Klima",
       "region": "NRW",
       "publishedAt": "2026-08-31T05:00:00+02:00",
       "image": "https://www1.wdr.de/duesseldorf-rhein-trocken-rissiger-boden-100~_v-HintergrundL.jpg",
       "imageAlt": "Ausgetrockneter, rissiger Boden am Rhein",
-      "source": {"name": "WDR"},
+      "source": {
+        "name": "WDR"
+      },
       "sourceUrl": "https://www1.wdr.de/nrw/wetter/aktuell/sommer-2026-bilanz-nrw-100.html"
     },
     {
@@ -200,7 +284,9 @@
       "publishedAt": "2026-08-31T05:10:00+02:00",
       "image": "https://www1.wdr.de/nachrichten/stalag-senne-100~_v-gross4x3.jpg",
       "imageAlt": "Historisches Gelände des Kriegsgefangenenlagers Stalag 326",
-      "source": {"name": "WDR"},
+      "source": {
+        "name": "WDR"
+      },
       "sourceUrl": "https://www1.wdr.de/nrw/ostwestfalen-lippe/kreis-guetersloh/senne-weltkrieg-stalag-kriegsgefangene-lager-erinnerung-100.html"
     },
     {
@@ -214,7 +300,9 @@
       "publishedAt": "2026-08-31T05:26:01+02:00",
       "image": "https://www1.wdr.de/nrw/sauerland-siegerland/kreis-siegen-wittgenstein/waldbrand-loeschwasserbehaelter-feuerwehr-burbach-102~_v-HintergrundL.jpg",
       "imageAlt": "Mobiler Löschwasserbehälter der Feuerwehr",
-      "source": {"name": "WDR"},
+      "source": {
+        "name": "WDR"
+      },
       "sourceUrl": "https://www1.wdr.de/nrw/sauerland-siegerland/kreis-siegen-wittgenstein/waldbrand-loeschwasserbehaelter-feuerwehr-burbach-100.html"
     },
     {
@@ -228,8 +316,26 @@
       "publishedAt": "2026-08-28T09:20:00+02:00",
       "image": "https://www.wz.de/imgs/39/2/7/9/0/3/9/4/6/7/tok_190b3395640d82954932e880c387ddb7/w1200_h630_x1249_y681_DPA_bfunk_dpa_5FA6AE0035D5C069-18512a06ef186d73.jpg",
       "imageAlt": "Industrieanlage im Bergischen Land",
-      "source": {"name": "Westdeutsche Zeitung"},
+      "source": {
+        "name": "Westdeutsche Zeitung"
+      },
       "sourceUrl": "https://www.wz.de/nrw/wuppertal/industrie-wuppertal-verliert-innerhalb-eines-jahres-1400-arbeitsplaetze_aid-153872475"
+    },
+    {
+      "id": "dortmund-azubi-campus",
+      "kind": "local",
+      "title": "Dortmund baut 112 günstige Wohnungen für Handwerks-Azubis",
+      "summary": "Der neue Azubi-Campus soll 2028 fertig sein; die Warmmiete ist auf höchstens 350 Euro angelegt. Das Land unterstützt das Projekt mit 13,5 Millionen Euro.",
+      "whyItMatters": "Bezahlbares Wohnen wird zur Fachkräftepolitik: Das Modell soll Ausbildung auch für junge Menschen ermöglichen, die nicht in Pendelentfernung wohnen.",
+      "category": "Wohnen & Ausbildung",
+      "region": "Ruhrgebiet",
+      "publishedAt": "2026-08-28T09:05:37+02:00",
+      "image": "https://www1.wdr.de/nrw/dortmund/azubi-guenstig-wohnungen-dortmund-handwerk-100~_v-HintergrundL.jpg",
+      "imageAlt": "Geplanter Azubi-Campus des Handwerks in Dortmund",
+      "source": {
+        "name": "WDR"
+      },
+      "sourceUrl": "https://www1.wdr.de/nrw/dortmund/bau-azubi-campus-handwerk-dortmund-100.html"
     },
     {
       "id": "hydrogen-rheine",
@@ -242,21 +348,25 @@
       "publishedAt": "2026-08-27T09:02:00+02:00",
       "image": "https://www1.wdr.de/nrw/verkehr/wasserstoff-tankstelle-rheine-lkw-110~_v-HintergrundL.jpg",
       "imageAlt": "Wasserstoff-Tankstelle für Lastwagen in Rheine",
-      "source": {"name": "WDR"},
+      "source": {
+        "name": "WDR"
+      },
       "sourceUrl": "https://www1.wdr.de/nrw/verkehr/wasserstoff-tankstelle-rheine-lkw-100.html"
     },
     {
       "id": "coal-protest-documentation",
       "kind": "local",
       "title": "Ein Dokumentationszentrum soll den Kohleprotest bewahren",
-      "summary": "Nach Jahrzehnten des Widerstands gegen die Tagebaue wird in Beverath über ein Dokumentationszentrum diskutiert. Es soll Erfahrungen aus den betroffenen Orten sichern.",
+      "summary": "Ein Forum in Alt-Berverath diskutiert, welchen Platz der Kohleprotest im geplanten Dokumentationszentrum in Erkelenz-Holzweiler erhalten soll. Die Einrichtung soll 2027 öffnen.",
       "whyItMatters": "Strukturwandel ist auch Erinnerungspolitik: Das Zentrum könnte Konflikte, Umsiedlungen und zivilgesellschaftliches Engagement dauerhaft dokumentieren.",
       "category": "Strukturwandel",
       "region": "Aachen/Eifel",
       "publishedAt": "2026-08-31T14:07:17+02:00",
       "image": "https://www1.wdr.de/politik/politik-in-nrw/luetzerath-130~_v-HintergrundL.jpg",
       "imageAlt": "Protest am Braunkohletagebau",
-      "source": {"name": "WDR"},
+      "source": {
+        "name": "WDR"
+      },
       "sourceUrl": "https://www1.wdr.de/nrw/aachen-eifel/kreis-heinsberg/beverath-heinsberg-diskussion-wiederstand-braunkohle-100.html"
     },
     {
@@ -270,7 +380,9 @@
       "publishedAt": "2026-08-30T20:53:06+02:00",
       "image": "https://www1.wdr.de/eine-woche-vor-sachsen-anhalt-wahl-schuh-100~_v-HintergrundL.jpg",
       "imageAlt": "Straßenszene vor der Wahl in Sachsen-Anhalt",
-      "source": {"name": "WDR"},
+      "source": {
+        "name": "WDR"
+      },
       "sourceUrl": "https://www1.wdr.de/politik/afd-wahl-sachsen-anhalt-stimmung-nrw-100.html"
     }
   ],
@@ -278,7 +390,12 @@
     "title": "Wüst kommt mit schwerem Rucksack aus der Sommerpause",
     "publishedAt": "2026-08-28T14:29:23+02:00",
     "summary": "Der aktuelle „18 Millionen“-Newsletter sortiert Wüsts Rückkehr aus der Sommerpause, Schulstart, Ganztagsanspruch, Nationalpark-Pläne und die Folgen des Rhein-Niedrigwassers.",
-    "highlights": ["Wüsts politische Last", "Schulstart", "Zweiter Nationalpark", "Rhein-Niedrigwasser"],
-    "sourceUrl": "https://nl-landespolitik.wdr.de/mailing/117/9393544/25419516/6290/b4c3b2f33f/index.html"
+    "highlights": [
+      "Wüsts politische Last",
+      "Schulstart",
+      "Zweiter Nationalpark",
+      "Rhein-Niedrigwasser"
+    ],
+    "sourceUrl": "https://www1.wdr.de/politik/politik-in-nrw/18-millionen/editorial-wuest-kommt-mit-schwerem-rucksack-aus-sommerpause-100.html"
   }
 }
