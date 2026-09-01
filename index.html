@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Newsreader:opsz,wght@6..72,500;6..72,600&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/styles.css?v=20260901-2">
+  <link rel="stylesheet" href="assets/styles.css?v=20260901-6">
 </head>
 <body>
   <a class="skip-link" href="#main">Zum Inhalt springen</a>
@@ -30,6 +30,9 @@
         <a href="#dauerbrenner">Dauerbrenner</a>
         <a href="#regionen">Regionen</a>
         <a href="#newsletter">18 Millionen</a>
+        <a href="#umfragen">Umfragen</a>
+        <a href="#regierungskritik">Regierung</a>
+        <a href="#social-radar">Social</a>
       </nav>
       <div class="header-actions">
         <button class="icon-button" id="search-toggle" type="button" aria-expanded="false" aria-controls="search-panel" aria-label="Suche öffnen">
@@ -146,6 +149,41 @@
       </div>
     </section>
 
+    <section class="data-section section-shell" id="umfragen" aria-labelledby="polling-heading">
+      <div class="section-heading split-heading">
+        <div>
+          <span class="eyebrow">Politische Stimmung</span>
+          <h2 id="polling-heading">NRW in Zahlen</h2>
+        </div>
+        <p>Die aktuellste belastbare Sonntagsfrage – mit Institut, Feldzeit, Vergleichswert und direkter Quelle.</p>
+      </div>
+      <div id="polling-panel" aria-live="polite"></div>
+    </section>
+
+    <section class="criticism-section section-shell" id="regierungskritik" aria-labelledby="criticism-heading">
+      <div class="section-heading split-heading">
+        <div>
+          <span class="eyebrow">Kritikmonitor</span>
+          <h2 id="criticism-heading">Wo Schwarz-Grün unter Druck steht</h2>
+        </div>
+        <p id="criticism-intro">Aktuelle Kritiklinien werden geladen.</p>
+      </div>
+      <div class="criticism-grid" id="criticism-grid" aria-live="polite"></div>
+    </section>
+
+    <section class="social-section section-shell" id="social-radar" aria-labelledby="social-heading">
+      <div class="section-heading split-heading">
+        <div>
+          <span class="eyebrow">Grüne NRW · öffentliche Kanäle</span>
+          <h2 id="social-heading">Social Media Radar</h2>
+        </div>
+        <p id="social-summary">Öffentliche Posts und Performance-Signale werden geladen.</p>
+      </div>
+      <div class="social-profile-grid" id="social-profiles"></div>
+      <div class="social-performance" id="social-performance" aria-live="polite"></div>
+      <p class="data-caveat" id="social-limitations"></p>
+    </section>
+
     <section class="section-shell method-section" id="methode" aria-labelledby="method-heading">
       <div>
         <span class="eyebrow">Transparenz</span>
@@ -169,6 +207,6 @@
   </footer>
 
   <template id="image-fallback-template"><div class="image-fallback"><span>NRW</span></div></template>
-  <script src="assets/app.js?v=20260901-1" defer></script>
+  <script src="assets/app.js?v=20260901-3" defer></script>
 </body>
 </html>

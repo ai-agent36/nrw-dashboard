@@ -12,12 +12,35 @@
   const dateLong = new Intl.DateTimeFormat('de-DE', { day: '2-digit', month: 'long', year: 'numeric', timeZone: 'Europe/Berlin' });
   const dateShort = new Intl.DateTimeFormat('de-DE', { day: '2-digit', month: 'short', timeZone: 'Europe/Berlin' });
   const dateTime = new Intl.DateTimeFormat('de-DE', { day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Berlin' });
+  const number = new Intl.NumberFormat('de-DE');
+  const parseDate = value => {
+    if (!value) return null;
+    const parsed = new Date(value);
+    return Number.isNaN(parsed.getTime()) ? null : parsed;
+  };
+  const formatDate = (formatter, value, fallback = '–') => {
+    const parsed = parseDate(value);
+    return parsed ? formatter.format(parsed) : fallback;
+  };
 
   function imageMarkup(item, lead = false) {
     const image = safeUrl(item.image || '');
     const className = lead ? 'lead-media' : 'card-media';
     if (image === '#') return `<div class="${className}"><div class="image-fallback"><span>NRW</span></div></div>`;
-    return `<div class="${className}"><img src="${esc(image)}" alt="${esc(item.imageAlt || '')}" loading="${lead ? 'eager' : 'lazy'}" referrerpolicy="no-referrer" data-image-fallback>${lead ? '<span class="image-scrim"></span>' : ''}${!lead && item.region ? `<span class="region-flag">${esc(item.region)}</span>` : ''}</div>`;
+    let credit = '';
+    if (lead && item.imageCredit) {
+      const sourceUrl = safeUrl(item.imageSourceUrl);
+      const licenseUrl = safeUrl(item.imageLicenseUrl);
+      const creator = sourceUrl === '#'
+        ? `© ${esc(item.imageCredit)}`
+        : `<a href="${sourceUrl}" target="_blank" rel="noopener noreferrer">© ${esc(item.imageCredit)}</a>`;
+      const license = licenseUrl === '#'
+        ? esc(item.imageLicense || 'Lizenz')
+        : `<a href="${licenseUrl}" target="_blank" rel="noopener noreferrer">${esc(item.imageLicense || 'Lizenz')}</a>`;
+      const provider = item.imageProvider ? ` <span>(via ${esc(item.imageProvider)})</span>` : '';
+      credit = `<span class="media-credit">${creator} / ${license}${provider}</span>`;
+    }
+    return `<div class="${className}"><img src="${esc(image)}" alt="${esc(item.imageAlt || '')}" loading="${lead ? 'eager' : 'lazy'}" referrerpolicy="no-referrer" data-image-fallback>${lead ? '<span class="image-scrim"></span>' : ''}${credit}${!lead && item.region ? `<span class="region-flag">${esc(item.region)}</span>` : ''}</div>`;
   }
 
   function metaMarkup(item, priority = '') {
@@ -54,9 +77,9 @@
   }
 
   function cardMarkup(item) {
-    const published = item.publishedAt ? new Date(item.publishedAt) : null;
+    const published = parseDate(item.publishedAt);
     const sourceName = item.source?.name || item.source || 'Quelle';
-    return `<article class="news-card reveal" data-kind="${esc(item.kind)}" data-search="${esc([item.title,item.summary,item.region,item.category,sourceName].join(' ').toLowerCase())}">${imageMarkup(item)}<div class="card-copy">${metaMarkup(item)}<h3>${esc(item.title)}</h3><p>${esc(item.summary)}</p>${item.whyItMatters ? `<p class="card-why"><strong>Einordnung:</strong> ${esc(item.whyItMatters)}</p>` : ''}<div class="card-footer"><a href="${safeUrl(item.sourceUrl)}" target="_blank" rel="noopener noreferrer">${esc(sourceName)} ↗</a><time datetime="${esc(item.publishedAt || '')}">${published && !Number.isNaN(published) ? dateShort.format(published) : ''}</time></div></div></article>`;
+    return `<article class="news-card reveal" data-kind="${esc(item.kind)}" data-search="${esc([item.title,item.summary,item.region,item.category,sourceName].join(' ').toLowerCase())}">${imageMarkup(item)}<div class="card-copy">${metaMarkup(item)}<h3>${esc(item.title)}</h3><p>${esc(item.summary)}</p>${item.whyItMatters ? `<p class="card-why"><strong>Einordnung:</strong> ${esc(item.whyItMatters)}</p>` : ''}<div class="card-footer"><a href="${safeUrl(item.sourceUrl)}" target="_blank" rel="noopener noreferrer">${esc(sourceName)} ↗</a><time datetime="${esc(item.publishedAt || '')}">${published ? dateShort.format(published) : ''}</time></div></div></article>`;
   }
 
   function renderStories() {
@@ -80,7 +103,46 @@
     $('#newsletter-highlights').innerHTML = (item.highlights || []).map(text => `<li>${esc(text)}</li>`).join('');
     const link = $('#newsletter-link');
     link.href = safeUrl(item.sourceUrl);
-    if (item.publishedAt) $('#newsletter-date').textContent = dateLong.format(new Date(item.publishedAt));
+    $('#newsletter-date').textContent = formatDate(dateLong, item.publishedAt, 'Keine gültige Ausgabe');
+  }
+
+  function renderPolling(item = {}) {
+    const root = $('#polling-panel');
+    if (!root || !Array.isArray(item.parties)) return;
+    const parties = item.parties.map(party => {
+      const value = Math.max(0, Math.min(100, Number(party.value) || 0));
+      const delta = Number(party.delta) || 0;
+      const trend = delta > 0 ? `+${delta}` : String(delta).replace('-', '−');
+      const trendClass = delta > 0 ? 'up' : delta < 0 ? 'down' : 'flat';
+      return `<div class="poll-row"><div class="poll-label"><strong>${esc(party.name)}</strong><span class="poll-delta ${trendClass}" aria-label="Veränderung ${trend} Prozentpunkte">${trend}</span></div><div class="poll-track" aria-hidden="true"><i class="party-${esc(party.id)}" style="--poll-value:${value}"></i></div><span class="poll-value">${value}<small>%</small></span></div>`;
+    }).join('');
+    root.innerHTML = `<article class="polling-card"><header class="polling-meta"><div><span class="eyebrow">${esc(item.institute)} · ${esc(item.commissionedBy)}</span><h3>${esc(item.title)}</h3><p>${esc(item.question)}</p></div><dl><div><dt>Veröffentlicht</dt><dd>${formatDate(dateLong, item.publishedAt)}</dd></div><div><dt>Feldzeit</dt><dd>${esc(item.fieldwork || '–')}</dd></div><div><dt>Befragte</dt><dd>${number.format(Number(item.sampleSize) || 0)}</dd></div></dl></header><div class="polling-body"><div class="poll-chart"><p class="chart-caption">${esc(item.comparisonLabel || '')} · Trend in Prozentpunkten</p>${parties}</div><aside class="polling-note"><span class="eyebrow">Mehrheitsbild</span><p>${esc(item.coalitionNote || '')}</p><small>${esc(item.note || '')}</small><div class="source-pair"><a href="${safeUrl(item.sourceUrl)}" target="_blank" rel="noopener noreferrer">WDR-Erhebung ↗</a><a href="${safeUrl(item.methodologyUrl)}" target="_blank" rel="noopener noreferrer">Umfrageübersicht ↗</a></div></aside></div></article>`;
+  }
+
+  function renderCriticism(item = {}) {
+    const root = $('#criticism-grid');
+    if (!root) return;
+    $('#criticism-intro').textContent = item.intro || 'Aktuelle Kritiklinien an der Landesregierung.';
+    root.innerHTML = (item.items || []).map(entry => `<article class="criticism-card reveal"><div class="criticism-top"><span>${esc(entry.topic)}</span><i class="pressure-${entry.level === 'hoch' ? 'high' : 'watch'}">${esc(entry.level || 'beobachten')}</i></div><h3>${esc(entry.title)}</h3><div class="criticism-block"><strong>Kritik von ${esc(entry.critic)}</strong><p>${esc(entry.criticism)}</p></div><div class="criticism-block response"><strong>Einordnung / Reaktion</strong><p>${esc(entry.response)}</p></div><a href="${safeUrl(entry.sourceUrl)}" target="_blank" rel="noopener noreferrer">${esc(entry.source || 'Quelle')} lesen ↗</a></article>`).join('');
+    observeReveals();
+  }
+
+  function renderSocial(item = {}) {
+    const profiles = $('#social-profiles');
+    const performance = $('#social-performance');
+    if (!profiles || !performance) return;
+    $('#social-summary').textContent = item.summary || 'Aktuelle öffentliche Plattformdaten.';
+    profiles.innerHTML = (item.profiles || []).map(profile => `<a class="social-profile" href="${safeUrl(profile.url)}" target="_blank" rel="noopener noreferrer"><div><span class="platform-mark">${esc((profile.platform || '?').slice(0, 2).toUpperCase())}</span><span><strong>${esc(profile.platform)}</strong><small>${esc(profile.handle)}</small></span></div><span class="availability availability-${profile.status === 'vollständig' ? 'full' : 'limited'}">${esc(profile.status)}</span>${profile.followers ? `<dl><div><dt>Follower</dt><dd>${number.format(profile.followers)}</dd></div><div><dt>Videos</dt><dd>${number.format(profile.videoCount || 0)}</dd></div><div><dt>Profil-Likes</dt><dd>${number.format(profile.profileLikes || 0)}</dd></div></dl>` : ''}<p>${esc(profile.note || '')}</p></a>`).join('');
+
+    const tiktok = item.tiktok || {};
+    const posts = tiktok.posts || [];
+    const maxViews = Math.max(1, ...posts.map(post => Number(post.views) || 0));
+    const postRows = posts.map((post, index) => {
+      const share = Math.max(3, Math.round((Number(post.views) || 0) / maxViews * 100));
+      return `<article class="social-post"><span class="post-rank">${String(index + 1).padStart(2, '0')}</span><div class="post-main"><div class="post-heading"><div><time datetime="${esc(post.publishedAt)}">${formatDate(dateShort, post.publishedAt, '')}</time><h4><a href="${safeUrl(post.url)}" target="_blank" rel="noopener noreferrer">${esc(post.title)}</a></h4></div><span class="performance-badge performance-${post.performance === 'Ausreißer' ? 'breakout' : post.performance === 'stark' ? 'strong' : 'base'}">${esc(post.performance)}</span></div><div class="views-bar"><i style="width:${share}%"></i></div><div class="post-metrics"><strong>${number.format(post.views || 0)} Views</strong><span>${number.format(post.likes || 0)} Likes</span><span>${number.format(post.comments || 0)} Kommentare</span><span>${number.format(post.reposts || 0)} Reposts</span><span>${number.format(post.durationSeconds || 0)} s</span></div></div></article>`;
+    }).join('');
+    performance.innerHTML = `<div class="social-performance-head"><div><span class="eyebrow">TikTok · letzte ${number.format(tiktok.sampleSize || posts.length)} Videos</span><h3>Was gepostet wurde – und wie es läuft</h3></div><time datetime="${esc(item.observedAt || '')}">Snapshot ${formatDate(dateTime, item.observedAt)} Uhr</time></div><div class="metric-strip"><div><span>Views gesamt</span><strong>${number.format(tiktok.viewsTotal || 0)}</strong></div><div><span>Median</span><strong>${number.format(tiktok.viewsMedian || 0)}</strong></div><div><span>Durchschnitt</span><strong>${number.format(tiktok.viewsAverage || 0)}</strong></div><div><span>Interaktionsrate</span><strong>${number.format(tiktok.interactionRate || 0)} %</strong></div><div><span>Top-Video-Anteil</span><strong>${number.format(tiktok.topVideoShare || 0)} %</strong></div></div><div class="social-post-list">${postRows}</div><p class="method-line">${esc(tiktok.method || '')}</p>`;
+    $('#social-limitations').textContent = item.limitations || '';
   }
 
   function activateImageFallbacks(root = document) {
@@ -106,7 +168,7 @@
 
   function render(data) {
     state.data = data;
-    const generated = data.meta?.generatedAt ? new Date(data.meta.generatedAt) : null;
+    const generated = parseDate(data.meta?.generatedAt);
     $('#edition-label').textContent = generated ? `Aktualisiert ${dateTime.format(generated)} Uhr` : 'Aktuelle Ausgabe';
     $('#generated-at').textContent = generated ? `${dateTime.format(generated)} Uhr` : '–';
     $('#source-count').textContent = String(data.meta?.sourceCount ?? '–');
@@ -118,6 +180,9 @@
     renderFocus(data.focusTopics || []);
     renderStories();
     renderNewsletter(data.newsletter || {});
+    renderPolling(data.polling || {});
+    renderCriticism(data.governmentCriticism || {});
+    renderSocial(data.socialRadar || {});
   }
 
   function setupInteractions() {

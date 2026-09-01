@@ -1,10 +1,10 @@
 {
   "meta": {
     "title": "NRW Lagebild",
-    "generatedAt": "2026-09-01T00:38:40+02:00",
+    "generatedAt": "2026-09-01T07:30:46+02:00",
     "edition": "01/09/2026",
-    "sourceCount": 19,
-    "editorialNote": "19 verifizierte Direktquellen · Einordnung statt Endlos-Feed"
+    "sourceCount": 36,
+    "editorialNote": "36 verlinkte Quellen, Profile und Originalposts · Einordnung statt Endlos-Feed"
   },
   "lead": {
     "id": "coal-exit-2030",
@@ -18,7 +18,14 @@
     "source": {
       "name": "WDR"
     },
-    "sourceUrl": "https://www1.wdr.de/politik/politik-in-nrw/braunkohleausstieg-merz-neubaur-100.html"
+    "sourceUrl": "https://www1.wdr.de/politik/politik-in-nrw/braunkohleausstieg-merz-neubaur-100.html",
+    "image": "assets/images/mona-neubaur.jpg",
+    "imageAlt": "NRW-Wirtschaftsministerin Mona Neubaur im Porträt",
+    "imageCredit": "Superbass",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:2022-08-29-Mona_Neubaur-hart_aber_fair-9989.jpg",
+    "imageProvider": "Wikimedia Commons"
   },
   "signals": [
     {
@@ -397,5 +404,252 @@
       "Rhein-Niedrigwasser"
     ],
     "sourceUrl": "https://www1.wdr.de/politik/politik-in-nrw/18-millionen/editorial-wuest-kommt-mit-schwerem-rucksack-aus-sommerpause-100.html"
+  },
+  "polling": {
+    "title": "Sonntagsfrage für Nordrhein-Westfalen",
+    "publishedAt": "2026-06-28T10:00:01+02:00",
+    "fieldwork": "22.–25. Juni 2026",
+    "sampleSize": 1139,
+    "institute": "Infratest dimap",
+    "commissionedBy": "WDR",
+    "question": "Welche Partei würden Sie wählen, wenn am nächsten Sonntag Landtagswahl in Nordrhein-Westfalen wäre?",
+    "comparisonLabel": "Veränderung zur Infratest-dimap-Erhebung vom 1. Februar 2026",
+    "parties": [
+      {
+        "id": "cdu",
+        "name": "CDU",
+        "value": 32,
+        "delta": -3
+      },
+      {
+        "id": "spd",
+        "name": "SPD",
+        "value": 17,
+        "delta": -3
+      },
+      {
+        "id": "gruene",
+        "name": "GRÜNE",
+        "value": 15,
+        "delta": 2
+      },
+      {
+        "id": "fdp",
+        "name": "FDP",
+        "value": 5,
+        "delta": 1
+      },
+      {
+        "id": "linke",
+        "name": "LINKE",
+        "value": 6,
+        "delta": 0
+      },
+      {
+        "id": "afd",
+        "name": "AfD",
+        "value": 17,
+        "delta": 2
+      },
+      {
+        "id": "sonstige",
+        "name": "Sonstige",
+        "value": 8,
+        "delta": 1
+      }
+    ],
+    "coalitionNote": "CDU und Grüne kommen zusammen auf 47 Prozent. Laut WDR hätte Schwarz-Grün damit im damaligen Modell weiterhin eine Landtagsmehrheit.",
+    "sourceUrl": "https://www1.wdr.de/politik/politik-in-nrw/nrw-trend-juni-2026-100.html",
+    "methodologyUrl": "https://www.wahlrecht.de/umfragen/landtage/nordrhein-westfalen.htm",
+    "note": "Umfragen sind Momentaufnahmen und keine Prognosen. Werte und Trends werden ersetzt, sobald eine neuere belastbare NRW-Erhebung erscheint."
+  },
+  "governmentCriticism": {
+    "asOf": "2026-09-01T01:03:09+02:00",
+    "intro": "Wer kritisiert Schwarz-Grün gerade – und woran genau? Der Monitor trennt Umfragesignale, Verbandskritik und Oppositionsangriffe von der redaktionellen Einordnung.",
+    "items": [
+      {
+        "id": "approval",
+        "topic": "Regierungsbilanz",
+        "level": "hoch",
+        "title": "Mehrheit im NRW-Trend unzufrieden",
+        "criticism": "53 Prozent bewerten die Arbeit der Landesregierung als unzufrieden, 42 Prozent als zufrieden. Seit Februar sank die Zufriedenheit um sechs Punkte.",
+        "critic": "NRW-Trend · Infratest dimap",
+        "response": "Das ist ein Stimmungsindikator, kein einzelner Sachvorwurf. Besonders Infrastruktur, Verkehr und Bildung werden als drängende Probleme genannt.",
+        "source": "WDR",
+        "sourceUrl": "https://www1.wdr.de/politik/politik-in-nrw/nrw-trend-juni-2026-100.html"
+      },
+      {
+        "id": "schools",
+        "topic": "Schule & Ganztag",
+        "level": "hoch",
+        "title": "GEW fordert verbindlichen Zehn-Jahres-Plan",
+        "criticism": "Die Gewerkschaft sieht erheblichen Handlungsbedarf bei Personal, Finanzierung und OGS-Qualität. Arme Kommunen würden beim Ganztag zu stark allein gelassen.",
+        "critic": "GEW NRW",
+        "response": "Die GEW würdigt zugleich Sozialindex, Startchancen-Programm und die neue Lehrkräftebesoldung. Der Streit betrifft vor allem Verbindlichkeit und Umsetzungstiefe.",
+        "source": "WDR",
+        "sourceUrl": "https://www1.wdr.de/politik/politik-in-nrw/schuljahresbeginn-nrw-lehrergewerkschaft-gew-bessere-ogs-100.html"
+      },
+      {
+        "id": "budget",
+        "topic": "Haushalt 2027",
+        "level": "hoch",
+        "title": "Fünf Milliarden Euro neue Schulden unter Beschuss",
+        "criticism": "SPD und FDP kritisieren die geplante Nettokreditaufnahme. Die SPD vermisst politische Schwerpunkte; die FDP fordert stärkere Aufgabenkritik.",
+        "critic": "SPD- und FDP-Landtagsopposition",
+        "response": "Finanzminister Marcus Optendrenk verweist auf schwache Steuereinnahmen, Krisenfolgen und Investitionen. NRW plant zugleich Einsparungen von 1,45 Milliarden Euro.",
+        "source": "WDR",
+        "sourceUrl": "https://www1.wdr.de/politik/politik-in-nrw/neuer-haushaltsplan-100.html"
+      },
+      {
+        "id": "adult-education",
+        "topic": "Kommunen & Weiterbildung",
+        "level": "beobachten",
+        "title": "VHS-Verband kritisiert ausbleibende Dynamisierung",
+        "criticism": "Der Landesverband verweist auf stagnierende Landeszuschüsse, während kommunale Finanznot zu Kurskürzungen und höheren Gebühren führt.",
+        "critic": "VHS-Landesverband NRW",
+        "response": "Das Wissenschaftsministerium will sich im nächsten Haushalt für eine stärkere Dynamisierung einsetzen; entscheiden muss der Landtag.",
+        "source": "WDR",
+        "sourceUrl": "https://www1.wdr.de/politik/politik-in-nrw/einsparungen-bei-vhs100.html"
+      }
+    ]
+  },
+  "socialRadar": {
+    "observedAt": "2026-09-01T01:03:09+02:00",
+    "summary": "Der aktuelle TikTok-Snapshot zeigt eine stark ungleiche Verteilung: Ein Klimaschutz-Video trägt 82,2 Prozent aller Views der acht jüngsten Beiträge. Die vier Gamescom-Videos liegen bislang bei 652 bis 833 Views.",
+    "profiles": [
+      {
+        "platform": "TikTok",
+        "handle": "@gruenenrw",
+        "url": "https://www.tiktok.com/@gruenenrw",
+        "status": "vollständig",
+        "followers": 13893,
+        "videoCount": 474,
+        "profileLikes": 263781,
+        "note": "Öffentliche Profil- und Videokennzahlen abrufbar."
+      },
+      {
+        "platform": "Instagram",
+        "handle": "@gruenenrw",
+        "url": "https://www.instagram.com/gruenenrw/",
+        "status": "eingeschränkt",
+        "note": "Offizieller Kanal bestätigt; Instagram blockiert den anonymen Post- und View-Abruf aktuell mit HTTP 429."
+      },
+      {
+        "platform": "Facebook",
+        "handle": "/gruenenrw",
+        "url": "https://www.facebook.com/gruenenrw/",
+        "status": "eingeschränkt",
+        "note": "Offizielle Seite bestätigt; aktuelle Video- und Beitragskennzahlen sind ohne autorisierte Meta-Verbindung nicht belastbar abrufbar."
+      }
+    ],
+    "tiktok": {
+      "accountVerified": true,
+      "sampleSize": 8,
+      "viewsTotal": 82369,
+      "viewsAverage": 10296,
+      "viewsMedian": 827,
+      "interactionRate": 8.6,
+      "topVideoShare": 82.2,
+      "method": "Öffentliche TikTok-Seitenmetadaten, ausgelesen über yt-dlp; Interaktionsrate = (Likes + Kommentare + Reposts) / Views.",
+      "posts": [
+        {
+          "id": "7680215435417046304",
+          "title": "Welches Cosplay ist eine 10/10?",
+          "publishedAt": "2026-08-31T17:18:28+02:00",
+          "durationSeconds": 88,
+          "views": 663,
+          "likes": 69,
+          "comments": 1,
+          "reposts": 3,
+          "performance": "Grundrauschen",
+          "url": "https://www.tiktok.com/@gruenenrw/video/7680215435417046304"
+        },
+        {
+          "id": "7679086575317159201",
+          "title": "Meccha Chameleon: Ricarda Lang gegen Tim Achtermeyer",
+          "publishedAt": "2026-08-29T16:24:00+02:00",
+          "durationSeconds": 59,
+          "views": 652,
+          "likes": 83,
+          "comments": 1,
+          "reposts": 3,
+          "performance": "Grundrauschen",
+          "url": "https://www.tiktok.com/@gruenenrw/video/7679086575317159201"
+        },
+        {
+          "id": "7679079671140601120",
+          "title": "Bestes Indie-Game der Gamescom 2026",
+          "publishedAt": "2026-08-28T15:51:08+02:00",
+          "durationSeconds": 71,
+          "views": 821,
+          "likes": 78,
+          "comments": 2,
+          "reposts": 2,
+          "performance": "am Median",
+          "url": "https://www.tiktok.com/@gruenenrw/video/7679079671140601120"
+        },
+        {
+          "id": "7678722155198074144",
+          "title": "Gamescom ohne GTA VI",
+          "publishedAt": "2026-08-27T16:43:45+02:00",
+          "durationSeconds": 54,
+          "views": 833,
+          "likes": 112,
+          "comments": 1,
+          "reposts": 5,
+          "performance": "am Median",
+          "url": "https://www.tiktok.com/@gruenenrw/video/7678722155198074144"
+        },
+        {
+          "id": "7678031182000360737",
+          "title": "„Wer liked, darf morgen duschen“",
+          "publishedAt": "2026-08-25T20:02:24+02:00",
+          "durationSeconds": 9,
+          "views": 1800,
+          "likes": 276,
+          "comments": 6,
+          "reposts": 9,
+          "performance": "über Median",
+          "url": "https://www.tiktok.com/@gruenenrw/video/7678031182000360737"
+        },
+        {
+          "id": "7677968818702011680",
+          "title": "„Ein ganz normaler Sommer, Herr Chrupalla?“",
+          "publishedAt": "2026-08-25T16:00:28+02:00",
+          "durationSeconds": 33,
+          "views": 9100,
+          "likes": 1010,
+          "comments": 143,
+          "reposts": 20,
+          "performance": "stark",
+          "url": "https://www.tiktok.com/@gruenenrw/video/7677968818702011680"
+        },
+        {
+          "id": "7675745714453957921",
+          "title": "Ölkonzerne, Übergewinne und Klimakosten",
+          "publishedAt": "2026-08-19T16:13:39+02:00",
+          "durationSeconds": 9,
+          "views": 800,
+          "likes": 97,
+          "comments": 8,
+          "reposts": 2,
+          "performance": "am Median",
+          "url": "https://www.tiktok.com/@gruenenrw/video/7675745714453957921"
+        },
+        {
+          "id": "7675399193057381664",
+          "title": "„Friedrich Merz, wann Klimaschutz?“",
+          "publishedAt": "2026-08-18T17:48:58+02:00",
+          "durationSeconds": 39,
+          "views": 67700,
+          "likes": 4734,
+          "comments": 272,
+          "reposts": 174,
+          "performance": "Ausreißer",
+          "url": "https://www.tiktok.com/@gruenenrw/video/7675399193057381664"
+        }
+      ]
+    },
+    "limitations": "Views und Interaktionen sind volatile Snapshots. Für Instagram/Facebook werden keine Werte geschätzt; belastbare Crosspost-, Reach- und Watchtime-Daten benötigen eine autorisierte Meta-Insights-Verbindung."
   }
 }
