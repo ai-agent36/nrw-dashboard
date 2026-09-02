@@ -135,13 +135,26 @@ class FeedValidationTests(unittest.TestCase):
                 "https://www1.wdr.de", "https://www1.wdr.de:443"
             )
 
-        self.assert_rejected(duplicate_poll_url, "sourceCount=36, calculated=35")
+        declared = BASELINE["meta"]["sourceCount"]
+        self.assert_rejected(
+            duplicate_poll_url,
+            f"sourceCount={declared}, calculated={declared - 1}",
+        )
 
     def test_attribution_targets_must_differ(self) -> None:
+        def duplicate_attribution_url(data: dict) -> None:
+            target = "https://commons.wikimedia.org/wiki/File:Example.jpg"
+            data["lead"].update(
+                image="assets/images/mona-neubaur.jpg",
+                imageCredit="Test author",
+                imageLicense="CC BY-SA 4.0",
+                imageProvider="Wikimedia Commons",
+                imageSourceUrl=target,
+                imageLicenseUrl=target,
+            )
+
         self.assert_rejected(
-            lambda data: data["lead"].update(
-                imageLicenseUrl=data["lead"]["imageSourceUrl"]
-            ),
+            duplicate_attribution_url,
             "imageSourceUrl and imageLicenseUrl must differ",
         )
 

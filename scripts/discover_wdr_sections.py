@@ -7,13 +7,13 @@ from pathlib import Path
 
 UA = "Mozilla/5.0 (compatible; NRW-Lagebild/1.0)"
 SECTIONS = {
-  "Köln/Bonn": ["https://www1.wdr.de/nrw/koeln/index.html", "https://www1.wdr.de/nrw/bonn/index.html"],
+  "Köln/Bonn": ["https://www1.wdr.de/nrw/koeln/index.html", "https://www1.wdr.de/nrw/rheinland/index.html"],
   "Düsseldorf/Niederrhein": ["https://www1.wdr.de/nrw/duesseldorf/index.html"],
   "Ruhrgebiet": ["https://www1.wdr.de/nrw/ruhrgebiet/index.html", "https://www1.wdr.de/nrw/dortmund/index.html", "https://www1.wdr.de/nrw/essen/index.html"],
   "Münsterland": ["https://www1.wdr.de/nrw/muensterland/index.html"],
   "Ostwestfalen-Lippe": ["https://www1.wdr.de/nrw/ostwestfalen-lippe/index.html"],
   "Aachen/Eifel": ["https://www1.wdr.de/nrw/aachen-eifel/index.html"],
-  "Südwestfalen": ["https://www1.wdr.de/nrw/suedwestfalen/index.html"],
+  "Südwestfalen": ["https://www1.wdr.de/nrw/sauerland-siegerland/index.html"],
   "Landespolitik": ["https://www1.wdr.de/politik/politik-in-nrw/index.html"],
 }
 
