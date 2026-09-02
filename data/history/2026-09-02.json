@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "NRW Lagebild",
-    "generatedAt": "2026-09-02T08:16:30+02:00",
+    "generatedAt": "2026-09-02T08:38:37+02:00",
     "edition": "02/09/2026",
     "sourceCount": 32,
     "editorialNote": "32 verlinkte Direktquellen, Profile und Originalposts · Einordnung statt Endlos-Feed"
@@ -36,6 +36,12 @@
       "detail": "Neue Schulplätze treffen auf Lehrkräftemangel, OGS-Streit und problematische Berufsschulwege im ländlichen Raum."
     },
     {
+      "title": "Kritische Infrastruktur",
+      "level": "high",
+      "intensity": 89,
+      "detail": "Nach Ausfällen am Umspannwerk Bergheim ermittelt die Polizei wegen einer vorsätzlichen Tat; Haushalte blieben versorgt."
+    },
+    {
       "title": "Kommunalfinanzen",
       "level": "high",
       "intensity": 86,
@@ -50,6 +56,9 @@
   ],
   "ticker": [
     {
+      "label": "Bergheim: Polizei ermittelt an Umspannwerk"
+    },
+    {
       "label": "Duisburg: 550 Stahl-Arbeitsplätze betroffen"
     },
     {
@@ -63,9 +72,6 @@
     },
     {
       "label": "Bielefeld produziert Wasserstoff für Busse und Müllwagen"
-    },
-    {
-      "label": "Regionalplan: Dinslaken treibt 800 Wohnungen weiter voran"
     }
   ],
   "focusTopics": [
@@ -121,6 +127,22 @@
     }
   ],
   "stories": [
+    {
+      "id": "bergheim-substation-suspected-attack",
+      "kind": "local",
+      "title": "Polizei ermittelt nach mutmaßlichem Angriff auf Umspannwerk",
+      "summary": "Nach einem Kurzschluss fielen am Amprion-Umspannwerk in Bergheim-Rheidt mehrere Kraftwerkszuleitungen aus. Die Polizei geht nicht von einem technischen Defekt, sondern von einer vorsätzlichen Tat aus; die allgemeine Stromversorgung blieb nach Angaben der Beteiligten stabil.",
+      "whyItMatters": "Der Vorfall betrifft kritische Energieinfrastruktur im Rheinischen Revier. Solange Tatmittel und Motiv ungeklärt sind, ist „mutmaßlicher Angriff“ die belastbare Einordnung – nicht ein bereits aufgeklärter Anschlag.",
+      "category": "Sicherheit & Energie",
+      "region": "Köln/Bonn",
+      "publishedAt": "2026-09-02T04:47:39+02:00",
+      "image": "https://www1.wdr.de/sabotage-umspannwerk-bergheim-video-tn-100~_v-gseagaleriexl.jpg",
+      "imageAlt": "Polizeieinsatz am Amprion-Umspannwerk in Bergheim",
+      "source": {
+        "name": "WDR"
+      },
+      "sourceUrl": "https://www1.wdr.de/nrw/rheinland/rhein-erft-kreis/moeglicher-anschlag-grosseinsatz-am-umspannwerk-niederaussem-100.html"
+    },
     {
       "id": "cologne-coesfeld-review",
       "kind": "local",
@@ -314,22 +336,6 @@
       "sourceUrl": "https://www1.wdr.de/nrw/bundesregierung-schliesst-russisches-generalkonsulat-in-bonn-100.html"
     },
     {
-      "id": "cologne-museums",
-      "kind": "local",
-      "title": "Kölns Museen stecken in einer Sanierungsfalle",
-      "summary": "Mehrere Kölner Museen sind wegen Sanierungen geschlossen; der Kulturbetrieb bleibt ungewöhnlich ruhig. Fachleute kritisieren, dass die Stadt ihr Potenzial nicht ausschöpfe.",
-      "whyItMatters": "Die Dauerbaustellen treffen kulturelle Teilhabe, Tourismus und das internationale Profil der größten NRW-Stadt zugleich.",
-      "category": "Kulturpolitik",
-      "region": "Köln/Bonn",
-      "publishedAt": "2026-08-31T17:49:15+02:00",
-      "image": "https://www1.wdr.de/radio/wdr3/programm/sendungen/roemisch-germanisches-museum-koeln-baustelle-100~_v-HintergrundL.jpg",
-      "imageAlt": "Baustelle am Römisch-Germanischen Museum in Köln",
-      "source": {
-        "name": "WDR"
-      },
-      "sourceUrl": "https://www1.wdr.de/kultur/zukunft-koelner-museen-100.html"
-    },
-    {
       "id": "teacher-pay-promotion",
       "kind": "land",
       "title": "Lehrerverbände unterstützen Klagen zur Beförderungsbesoldung",
@@ -433,7 +439,7 @@
     "note": "Umfragen sind Momentaufnahmen und keine Prognosen. WDR und Wahlrecht.de führen diese Erhebung weiterhin als jüngste belastbare landesweite NRW-Sonntagsfrage; Werte und Trends werden bei einer neueren Erhebung ersetzt."
   },
   "governmentCriticism": {
-    "asOf": "2026-09-02T08:16:30+02:00",
+    "asOf": "2026-09-02T08:38:37+02:00",
     "intro": "Wer kritisiert Schwarz-Grün gerade – und woran genau? Der Monitor trennt Umfragesignale, Verbandskritik und Oppositionsangriffe von der redaktionellen Einordnung.",
     "items": [
       {
@@ -483,8 +489,8 @@
     ]
   },
   "socialRadar": {
-    "observedAt": "2026-09-02T08:11:24+02:00",
-    "summary": "Das neue Sachsen-Anhalt-Video erreicht bereits 4.186 Views. Meistgesehen im aktuellen Acht-Video-Fenster bleibt das Hitze-Video mit 9.115 Views; es trägt 48,0 Prozent aller Aufrufe.",
+    "observedAt": "2026-09-02T08:33:18+02:00",
+    "summary": "Das ältere Merz/Klimaschutz-Video ist im aktuellen Acht-Video-Fenster mit 68.400 Views der klare Ausreißer und trägt 87,3 Prozent aller Aufrufe. Das neueste Sachsen-Anhalt-Video steht bei 4.204 Views.",
     "profiles": [
       {
         "platform": "TikTok",
@@ -492,8 +498,8 @@
         "url": "https://www.tiktok.com/@gruenenrw",
         "status": "vollständig",
         "followers": 13916,
-        "videoCount": 475,
-        "profileLikes": 264213,
+        "videoCount": 474,
+        "profileLikes": 264215,
         "note": "Öffentliche Profil- und Videokennzahlen abrufbar."
       },
       {
@@ -508,17 +514,17 @@
         "handle": "/gruenenrw",
         "url": "https://www.facebook.com/gruenenrw/",
         "status": "eingeschränkt",
-        "note": "Offizielle Seite erreichbar; sie weist 31.376 „Gefällt mir“-Angaben aus, aktuelle Post-, Video- und View-Kennzahlen sind anonym nicht belastbar abrufbar."
+        "note": "Offizielle Seite bestätigt; der anonyme Originalseiten-Abruf antwortet aktuell mit HTTP 400, daher werden keine aktuellen Post- oder Videokennzahlen ausgewiesen."
       }
     ],
     "tiktok": {
       "accountVerified": true,
       "sampleSize": 8,
-      "viewsTotal": 19003,
-      "viewsAverage": 2375,
+      "viewsTotal": 78307,
+      "viewsAverage": 9788,
       "viewsMedian": 852,
-      "interactionRate": 12.5,
-      "topVideoShare": 48.0,
+      "interactionRate": 8.2,
+      "topVideoShare": 87.3,
       "method": "Neueste acht nicht angeheftete Videos aus öffentlichen TikTok-Seitenmetadaten, ausgelesen über yt-dlp; Interaktionsrate = (Likes + Kommentare + Reposts) / Views.",
       "posts": [
         {
@@ -526,8 +532,8 @@
           "title": "Support für die Grünen in Sachsen-Anhalt",
           "publishedAt": "2026-09-01T18:12:36+02:00",
           "durationSeconds": 47,
-          "views": 4186,
-          "likes": 368,
+          "views": 4204,
+          "likes": 370,
           "comments": 18,
           "reposts": 32,
           "url": "https://www.tiktok.com/@gruenenrw/video/7680600464295021856",
@@ -574,7 +580,7 @@
           "title": "Gamescom ohne GTA VI",
           "publishedAt": "2026-08-27T16:43:45+02:00",
           "durationSeconds": 54,
-          "views": 865,
+          "views": 866,
           "likes": 114,
           "comments": 1,
           "reposts": 5,
@@ -594,18 +600,6 @@
           "performance": "über Median"
         },
         {
-          "id": "7677968818702011680",
-          "title": "„Ein ganz normaler Sommer, Herr Chrupalla?“",
-          "publishedAt": "2026-08-25T16:00:28+02:00",
-          "durationSeconds": 33,
-          "views": 9115,
-          "likes": 1014,
-          "comments": 143,
-          "reposts": 20,
-          "url": "https://www.tiktok.com/@gruenenrw/video/7677968818702011680",
-          "performance": "Ausreißer"
-        },
-        {
           "id": "7675745714453957921",
           "title": "Ölkonzerne, Übergewinne und Klimakosten",
           "publishedAt": "2026-08-19T16:13:39+02:00",
@@ -616,9 +610,21 @@
           "reposts": 2,
           "url": "https://www.tiktok.com/@gruenenrw/video/7675745714453957921",
           "performance": "am Median"
+        },
+        {
+          "id": "7675399193057381664",
+          "title": "„Friedrich Merz, wann Klimaschutz?“",
+          "publishedAt": "2026-08-18T17:48:58+02:00",
+          "durationSeconds": 39,
+          "views": 68400,
+          "likes": 4764,
+          "comments": 273,
+          "reposts": 174,
+          "url": "https://www.tiktok.com/@gruenenrw/video/7675399193057381664",
+          "performance": "Ausreißer"
         }
       ]
     },
-    "limitations": "Views und Interaktionen sind volatile Snapshots. Für Instagram/Facebook werden keine Postwerte geschätzt; belastbare Crosspost-, Reach- und Watchtime-Daten benötigen eine autorisierte Meta-Insights-Verbindung."
+    "limitations": "Views und Interaktionen sind volatile Snapshots. Der aktuelle TikTok-Profilabruf war erfolgreich; ein zuvor sichtbarer Beitrag wurde im aktuellen Acht-Video-Fenster nicht mehr ausgegeben und deshalb nicht mit alten Werten fortgeschrieben. Für Instagram/Facebook werden wegen der dokumentierten Zugriffsbeschränkungen keine Postwerte geschätzt; belastbare Crosspost-, Reach- und Watchtime-Daten benötigen eine autorisierte Meta-Insights-Verbindung."
   }
 }
